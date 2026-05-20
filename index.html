@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Windows Style Calculator</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+<div class="calculator-container">
+
+  <!-- LEFT SIDE -->
+  <div class="calculator">
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+
+      <div class="left-top">
+
+        <div class="menu">☰</div>
+
+        <button
+          class="settings-btn"
+          onclick="toggleSettings()"
+        >
+          Settings
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- SETTINGS PANEL -->
+    <div
+      class="settings-panel"
+      id="settingsPanel"
+    >
+
+      <h3>Appearance</h3>
+
+      <button onclick="setTheme('dark')">
+        Dark
+      </button>
+
+      <button onclick="setTheme('light')">
+        Light
+      </button>
+
+      <button onclick="setTheme('system')">
+        System Default
+      </button>
+
+    </div>
+
+    <!-- DISPLAY -->
+    <div class="display-area">
+
+      <div
+        class="preview"
+        id="preview"
+      ></div>
+
+      <input
+        type="text"
+        id="display"
+        value="0"
+      >
+
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+
+      <!-- ROW 1 -->
+      <button onclick="append('%')">%</button>
+
+      <button onclick="clearEntry()">
+        CE
+      </button>
+
+      <button onclick="clearDisplay()">
+        C
+      </button>
+
+      <button onclick="backspace()">
+        ⌫
+      </button>
+
+      <!-- ROW 2 -->
+      <button onclick="append('1/')">
+        1/x
+      </button>
+
+      <button onclick="append('**2')">
+        x²
+      </button>
+
+      <button onclick="append('Math.sqrt(')">
+        √x
+      </button>
+
+      <button
+        class="operator"
+        onclick="append('/')"
+      >
+        ÷
+      </button>
+
+      <!-- ROW 3 -->
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+
+      <button
+        class="operator"
+        onclick="append('*')"
+      >
+        ×
+      </button>
+
+      <!-- ROW 4 -->
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+
+      <button
+        class="operator"
+        onclick="append('-')"
+      >
+        −
+      </button>
+
+      <!-- ROW 5 -->
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+
+      <button
+        class="operator"
+        onclick="append('+')"
+      >
+        +
+      </button>
+
+      <!-- ROW 6 -->
+      <button onclick="toggleSign()">
+        ±
+      </button>
+
+      <button onclick="append('0')">
+        0
+      </button>
+
+      <button onclick="append('.')">
+        .
+      </button>
+
+      <button
+        class="equal"
+        onclick="calculate()"
+      >
+        =
+      </button>
+
+      <!-- SCIENTIFIC -->
+      <button onclick="append('sin(')">
+        sin
+      </button>
+
+      <button onclick="append('cos(')">
+        cos
+      </button>
+
+      <button onclick="append('tan(')">
+        tan
+      </button>
+
+      <button onclick="append('Math.log10(')">
+        log
+      </button>
+
+      <button onclick="append('(')">
+        (
+      </button>
+
+      <button onclick="append(')')">
+        )
+      </button>
+
+      <button onclick="append('Math.PI')">
+        π
+      </button>
+
+      <button onclick="append('Math.E')">
+        e
+      </button>
+
+      <button onclick="append('!')">
+        x!
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- HISTORY -->
+  <div class="history-panel">
+
+    <div class="history-header">
+
+      <h2>History</h2>
+
+      <button
+        class="clear-history"
+        onclick="clearHistory()"
+      >
+        Clear
+      </button>
+
+    </div>
+
+    <ul id="historyList"></ul>
+
+  </div>
+
+</div>
+
+<!-- BUTTON SOUND -->
+<audio
+  id="clickSound"
+  src="click.mp3"
+  preload="auto"
+></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
