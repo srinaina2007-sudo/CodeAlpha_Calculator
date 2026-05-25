@@ -1,22 +1,91 @@
-#CodeAlpha Calculator
+<h1 align="center">🧮 CodeAlpha Scientific Calculator</h1>
 
-Responsive scientific calculator built using HTML, CSS, and JavaScript for the CodeAlpha Frontend Development Internship.
+<p align="center">
+  Modern • Responsive • Scientific • Stylish
+</p>
 
-Features
+---
 
-Basic arithmetic operations
+## 🚀 Live Demo
 
-Scientific functions
+🔗 https://srinaina2007-sudo.github.io/CodeAlpha_Calculator/
 
-Responsive design
+---
 
-User-friendly interface
+## 📸 Preview
 
+### Desktop View
+![Desktop Screenshot](images/calculator-desktop.png)
 
-Technologies Used
+### Mobile View
+![Mobile Screenshot](images/calculator-mobile.png)
 
-HTML
+---
 
-CSS
+## ✨ Features
 
-JavaScript
+✅ Basic Arithmetic Operations  
+✅ Scientific Functions  
+✅ Responsive Design  
+✅ Keyboard Support  
+✅ Smooth Animations  
+✅ Modern UI  
+✅ Error Handling  
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+---
+
+## 📂 Project Structure
+
+```bash
+CodeAlpha_Calculator/
+│── index.html
+│── style.css
+│── script.js
+│── README.md
+│── images/
+```
+
+---
+
+## 🎯 Scientific Functions Included
+
+- Sin
+- Cos
+- Tan
+- Square Root
+- Power
+- Percentage
+- Logarithm
+
+---
+
+## 💡 What I Learned
+
+- DOM Manipulation
+- Event Handling
+- Responsive Web Design
+- JavaScript Functions
+- UI/UX Design
+
+---
+
+## 👨‍💻 Author
+
+Sri Naina
+
+GitHub:
+https://github.com/srinaina2007-sudo
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a star ⭐
